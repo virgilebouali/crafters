@@ -18,7 +18,7 @@ export default function SignIn() {
     );
   }
   return (
-    <div className="bg-violet-400">
+    <div className="">
       <Button onClick={() => signIn()}>Se connecter</Button>
     </div>
   );

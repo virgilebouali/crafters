@@ -2,7 +2,7 @@
 const nextConfig = {
    
         images: {
-            domains: ['cdn.discordapp.com', 'images.unsplash.com', 'plus.unsplash.com'],
+            domains: ['cdn.discordapp.com', 'images.unsplash.com', 'plus.unsplash.com', 'avatars.githubusercontent.com'],
           },
           
       
