@@ -55,8 +55,7 @@ export default function LandingPage() {
       {session ? (
               <DropdownMenu>
               <DropdownMenuTrigger>
-              <Image src={session.user.image} alt="user image" width={50} height={50} className=" rounded-full  border-white border-2 hover:border-purple-300"/>
-            
+                <Image src={session?.user.image ?? ''} alt="user image" width={50} height={50} className="rounded-full  border-white border-2 hover:border-purple-300"/>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuLabel>{session.user.name}</DropdownMenuLabel>
