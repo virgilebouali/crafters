@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
-import { MoonIcon, SunIcon, SpaceIcon } from "lucide-react";
+import { MoonIcon, SunIcon, SpaceIcon, UserIcon } from "lucide-react";
 import Image from "next/image";
 import { useSession, signIn, signOut, SessionProvider } from "next-auth/react";
 import { Spotlight } from "@/components/ui/Spotlight";
@@ -54,8 +54,14 @@ export default function DesktopNav() {
       {session ? (
               <DropdownMenu>
               <DropdownMenuTrigger>
-                <Image src={session?.user.image ?? ''} alt="user image" width={50} height={50} className=" rounded-full "/>
-              </DropdownMenuTrigger>
+              <Image
+  src={session?.user.image || ''}
+  alt="user image"
+  width={50}
+  height={50}
+  className="rounded-full"
+/>
+{!session?.user.image && <UserIcon />}              </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuLabel>{session?.user.name}</DropdownMenuLabel>
               
