@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx prisma db push && npx prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "prisma generate",
@@ -12,6 +12,7 @@
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
     "stripe:listen": "stripe listen --forward-to localhost:3000/api/webhooks/stripe"
+    
   },
   "dependencies": {
     "@auth/core": "^0.28.0",
