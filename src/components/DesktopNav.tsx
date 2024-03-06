@@ -54,8 +54,7 @@ export default function DesktopNav() {
       {session ? (
               <DropdownMenu>
               <DropdownMenuTrigger>
-              <Image src={session.user.image} alt="user image" width={50} height={50} className=" rounded-full "/>
-            
+                <Image src={session.user.image ?? ''} alt="user image" width={50} height={50} className=" rounded-full "/>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuLabel>{session.user.name}</DropdownMenuLabel>
