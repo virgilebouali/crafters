@@ -17,7 +17,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Hero } from "@/components/Waves";
 import { Features } from "@/components/Features";
 
 export default function DesktopNav() {
