@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -39,7 +40,7 @@ export function Features() {
 
 const dummyContent = [
   {
-    title: "Apportez nous l'idée de votre projet",
+    title: "Apportez nous l&apos;idée de votre projet",
     description: (
       <>
         <p>
